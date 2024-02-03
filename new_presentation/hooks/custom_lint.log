@@ -1,0 +1,99 @@
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+The environment "sdk" has incompatible version constraints in the project:
+- ">=3.2.5 <4.0.0"
+  from "empty_application" at "././pubspec.yaml".
+- ">=2.12.0 <3.0.0"
+  from "new_presentation_hooks" at "./bricks/new_presentation/hooks/pubspec.yaml".
+
+at:
+#0      CustomLintWorkspace._writeEnvironment (package:custom_lint/src/workspace.dart:570:9)
+#1      CustomLintWorkspace.computePubspec (package:custom_lint/src/workspace.dart:538:5)
+#2      CustomLintWorkspace.resolvePluginHost (package:custom_lint/src/workspace.dart:798:28)
+#3      SocketCustomLintServerToClientChannel._startProcess (package:custom_lint/src/v2/server_to_client_channel.dart:160:24)
+#4      SocketCustomLintServerToClientChannel.init (package:custom_lint/src/v2/server_to_client_channel.dart:110:22)
+#5      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:364:25)
+<asynchronous suspension>
+#6      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:328:9)
+<asynchronous suspension>
+#7      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#8      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:160:22)
+<asynchronous suspension>
+
+[custom_lint] 2024-02-03T18:10:07.761556 _PrettyRequestFailure: {"code":"PLUGIN_ERROR","message":"The environment \"sdk\" has incompatible version constraints in the project:\n- \">=3.2.5 <4.0.0\"\n  from \"empty_application\" at \"././pubspec.yaml\".\n- \">=2.12.0 <3.0.0\"\n  from \"new_presentation_hooks\" at \"./bricks/new_presentation/hooks/pubspec.yaml\".\n","stackTrace":"#0      CustomLintWorkspace._writeEnvironment (package:custom_lint/src/workspace.dart:570:9)\n#1      CustomLintWorkspace.computePubspec (package:custom_lint/src/workspace.dart:538:5)\n#2      CustomLintWorkspace.resolvePluginHost (package:custom_lint/src/workspace.dart:798:28)\n#3      SocketCustomLintServerToClientChannel._startProcess (package:custom_lint/src/v2/server_to_client_channel.dart:160:24)\n#4      SocketCustomLintServerToClientChannel.init (package:custom_lint/src/v2/server_to_client_channel.dart:110:22)\n#5      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:364:25)\n<asynchronous suspension>\n#6      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:328:9)\n<asynchronous suspension>\n#7      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)\n<asynchronous suspension>\n#8      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:160:22)\n<asynchronous suspension>\n"}
+[custom_lint] 2024-02-03T18:10:07.761556 #0      ChannelBase.sendRequest (package:custom_lint/src/server_isolate_channel.dart:82:7)
+[custom_lint] 2024-02-03T18:10:07.761556 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:07.761556 #1      CustomLintRunner.initialize.<anonymous closure> (package:custom_lint/src/runner.dart:43:5)
+[custom_lint] 2024-02-03T18:10:07.761556 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:07.761556 #2      _runServer.<anonymous closure> (package:custom_lint/custom_lint.dart:92:7)
+[custom_lint] 2024-02-03T18:10:07.761556 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:07.761556 #3      _AsyncCompleter.complete (dart:async/future_impl.dart:41:3)
+[custom_lint] 2024-02-03T18:10:07.761556 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:07.761556
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+The environment "sdk" has incompatible version constraints in the project:
+- ">=3.2.5 <4.0.0"
+  from "empty_application" at "././pubspec.yaml".
+- ">=2.12.0 <3.0.0"
+  from "new_presentation_hooks" at "./bricks/new_presentation/hooks/pubspec.yaml".
+
+at:
+#0      CustomLintWorkspace._writeEnvironment (package:custom_lint/src/workspace.dart:570:9)
+#1      CustomLintWorkspace.computePubspec (package:custom_lint/src/workspace.dart:538:5)
+#2      CustomLintWorkspace.resolvePluginHost (package:custom_lint/src/workspace.dart:798:28)
+#3      SocketCustomLintServerToClientChannel._startProcess (package:custom_lint/src/v2/server_to_client_channel.dart:160:24)
+#4      SocketCustomLintServerToClientChannel.init (package:custom_lint/src/v2/server_to_client_channel.dart:110:22)
+#5      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:364:25)
+<asynchronous suspension>
+#6      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:328:9)
+<asynchronous suspension>
+#7      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#8      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:160:22)
+<asynchronous suspension>
+
+[custom_lint] 2024-02-03T18:10:12.297203 _PrettyRequestFailure: {"code":"PLUGIN_ERROR","message":"The environment \"sdk\" has incompatible version constraints in the project:\n- \">=3.2.5 <4.0.0\"\n  from \"empty_application\" at \"././pubspec.yaml\".\n- \">=2.12.0 <3.0.0\"\n  from \"new_presentation_hooks\" at \"./bricks/new_presentation/hooks/pubspec.yaml\".\n","stackTrace":"#0      CustomLintWorkspace._writeEnvironment (package:custom_lint/src/workspace.dart:570:9)\n#1      CustomLintWorkspace.computePubspec (package:custom_lint/src/workspace.dart:538:5)\n#2      CustomLintWorkspace.resolvePluginHost (package:custom_lint/src/workspace.dart:798:28)\n#3      SocketCustomLintServerToClientChannel._startProcess (package:custom_lint/src/v2/server_to_client_channel.dart:160:24)\n#4      SocketCustomLintServerToClientChannel.init (package:custom_lint/src/v2/server_to_client_channel.dart:110:22)\n#5      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:364:25)\n<asynchronous suspension>\n#6      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:328:9)\n<asynchronous suspension>\n#7      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)\n<asynchronous suspension>\n#8      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:160:22)\n<asynchronous suspension>\n"}
+[custom_lint] 2024-02-03T18:10:12.297203 #0      ChannelBase.sendRequest (package:custom_lint/src/server_isolate_channel.dart:82:7)
+[custom_lint] 2024-02-03T18:10:12.297203 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:12.297203 #1      CustomLintRunner.initialize.<anonymous closure> (package:custom_lint/src/runner.dart:43:5)
+[custom_lint] 2024-02-03T18:10:12.297203 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:12.297203 #2      _runServer.<anonymous closure> (package:custom_lint/custom_lint.dart:92:7)
+[custom_lint] 2024-02-03T18:10:12.297203 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:12.297203 #3      _AsyncCompleter.complete (dart:async/future_impl.dart:41:3)
+[custom_lint] 2024-02-03T18:10:12.297203 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:12.297203
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+The environment "sdk" has incompatible version constraints in the project:
+- ">=3.2.5 <4.0.0"
+  from "empty_application" at "././pubspec.yaml".
+- ">=2.12.0 <3.0.0"
+  from "new_presentation_hooks" at "./bricks/new_presentation/hooks/pubspec.yaml".
+
+at:
+#0      CustomLintWorkspace._writeEnvironment (package:custom_lint/src/workspace.dart:570:9)
+#1      CustomLintWorkspace.computePubspec (package:custom_lint/src/workspace.dart:538:5)
+#2      CustomLintWorkspace.resolvePluginHost (package:custom_lint/src/workspace.dart:798:28)
+#3      SocketCustomLintServerToClientChannel._startProcess (package:custom_lint/src/v2/server_to_client_channel.dart:160:24)
+#4      SocketCustomLintServerToClientChannel.init (package:custom_lint/src/v2/server_to_client_channel.dart:110:22)
+#5      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:364:25)
+<asynchronous suspension>
+#6      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:328:9)
+<asynchronous suspension>
+#7      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#8      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:160:22)
+<asynchronous suspension>
+
+[custom_lint] 2024-02-03T18:10:31.053725 _PrettyRequestFailure: {"code":"PLUGIN_ERROR","message":"The environment \"sdk\" has incompatible version constraints in the project:\n- \">=3.2.5 <4.0.0\"\n  from \"empty_application\" at \"././pubspec.yaml\".\n- \">=2.12.0 <3.0.0\"\n  from \"new_presentation_hooks\" at \"./bricks/new_presentation/hooks/pubspec.yaml\".\n","stackTrace":"#0      CustomLintWorkspace._writeEnvironment (package:custom_lint/src/workspace.dart:570:9)\n#1      CustomLintWorkspace.computePubspec (package:custom_lint/src/workspace.dart:538:5)\n#2      CustomLintWorkspace.resolvePluginHost (package:custom_lint/src/workspace.dart:798:28)\n#3      SocketCustomLintServerToClientChannel._startProcess (package:custom_lint/src/v2/server_to_client_channel.dart:160:24)\n#4      SocketCustomLintServerToClientChannel.init (package:custom_lint/src/v2/server_to_client_channel.dart:110:22)\n#5      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:364:25)\n<asynchronous suspension>\n#6      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:328:9)\n<asynchronous suspension>\n#7      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)\n<asynchronous suspension>\n#8      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:160:22)\n<asynchronous suspension>\n"}
+[custom_lint] 2024-02-03T18:10:31.053725 #0      ChannelBase.sendRequest (package:custom_lint/src/server_isolate_channel.dart:82:7)
+[custom_lint] 2024-02-03T18:10:31.053725 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:31.053725 #1      CustomLintRunner.initialize.<anonymous closure> (package:custom_lint/src/runner.dart:43:5)
+[custom_lint] 2024-02-03T18:10:31.053725 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:31.053725 #2      _runServer.<anonymous closure> (package:custom_lint/custom_lint.dart:92:7)
+[custom_lint] 2024-02-03T18:10:31.053725 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:31.053725 #3      _AsyncCompleter.complete (dart:async/future_impl.dart:41:3)
+[custom_lint] 2024-02-03T18:10:31.053725 <asynchronous suspension>
+[custom_lint] 2024-02-03T18:10:31.053725
