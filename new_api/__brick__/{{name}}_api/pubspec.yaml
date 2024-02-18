@@ -7,7 +7,8 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-
+  flutter:
+    sdk: flutter
   # Annotations
   json_annotation: ^4.8.1
   freezed_annotation: ^2.4.1
