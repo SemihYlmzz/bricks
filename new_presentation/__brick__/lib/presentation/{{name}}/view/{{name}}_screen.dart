@@ -11,7 +11,18 @@ class {{name.pascalCase()}}Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => {{name.pascalCase()}}Bloc(),
-      child: const {{name.pascalCase()}}View(),
+      child: Builder(
+        builder: (context) {
+          final isLoading = context.select(
+            ({{name.pascalCase()}}Bloc bloc) => bloc.state.isLoading,
+          );
+          return LoadingScreen(
+            isLoading: isLoading,
+            size: MediaQuery.sizeOf(context),
+            child: const {{name.pascalCase()}}View(),
+          );
+        },
+      ),
     );
   }
 }
