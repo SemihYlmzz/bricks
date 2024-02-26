@@ -3,7 +3,7 @@ import 'package:toy_switch/presentation/presentation.dart';
 
 import '../../../common/modals/modals.dart';
 
-extension ErrorDisplayer on {{name.pascalCase()}}BlocListeners {
+extension {{name.pascalCase()}}ErrorDisplayer on {{name.pascalCase()}}BlocListeners {
   BlocListener<{{name.pascalCase()}}Bloc, {{name.pascalCase()}}State>
       errorDisplayer() {
     return BlocListener(
