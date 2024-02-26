@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shared_widgets/shared_widgets.dart';
 import '../../presentation.dart';
 
 class {{name.pascalCase()}}Screen extends StatelessWidget {

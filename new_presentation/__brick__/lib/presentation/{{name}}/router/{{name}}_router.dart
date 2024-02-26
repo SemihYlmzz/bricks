@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:toy_switch/app/router/app_router.dart';
 import 'package:toy_switch/presentation/presentation.dart';
 
 class {{name.pascalCase()}}Router {
   factory {{name.pascalCase()}}Router() {
     return instance;
   }
-  EmailVerificationRouter._();
+  {{name.pascalCase()}}Router._();
   static final {{name.pascalCase()}}Router instance = {{name.pascalCase()}}Router._();
 
   static const String _path = '/{{name}}';
