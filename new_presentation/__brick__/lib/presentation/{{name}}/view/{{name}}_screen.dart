@@ -8,11 +8,13 @@ class {{name.pascalCase()}}Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final {{name.camelCase()}}BlocListeners =
+        {{name.pascalCase()}}BlocListeners();
     return BlocProvider(
       create: (context) => {{name.pascalCase()}}Bloc(),
       child: MultiBlocListener(
         listeners:[
-          {{name}}errorDisplayer(),
+          {{name.camelCase()}}BlocListeners.errorDisplayer(),
         ],
         child: Builder(
               builder: (context) {
