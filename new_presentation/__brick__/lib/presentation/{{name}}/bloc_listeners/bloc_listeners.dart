@@ -1,2 +1,2 @@
 export 'error_displayer.dart';
-export '{{name}}__bloc_listeners.dart';
+export '{{name}}_bloc_listeners.dart';
