@@ -14,7 +14,7 @@ class {{name.pascalCase()}}Bloc extends Bloc<{{name.pascalCase()}}Event, {{name.
     {{name.pascalCase()}}Event event,
     Emitter<{{name.pascalCase()}}State> emit,
     ) async {
-    emit(state.copyWith(isLoading: true, errorMessage: null));
+    emit(state.copyWith(isLoading: true));
     
     switch (event) {
       case {{name.pascalCase()}}Fetch():
