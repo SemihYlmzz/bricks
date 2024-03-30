@@ -9,26 +9,24 @@ class {{name.pascalCase()}}Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final {{name.camelCase()}}BlocListeners =
-        {{name.pascalCase()}}BlocListeners();
+    final {{name.camelCase()}}BlocListeners = {{name.pascalCase()}}BlocListeners();
+  
     return BlocProvider(
       create: (context) => {{name.pascalCase()}}Bloc(),
       child: MultiBlocListener(
-        listeners:[
+        listeners: [
           {{name.camelCase()}}BlocListeners.errorDisplayer(),
         ],
-        child: Builder(
-              builder: (context) {
-                final isLoading = context.select(
-                  ({{name.pascalCase()}}Bloc bloc) => bloc.state.isLoading,
-                );
-                return LoadingScreen(
-                  isLoading: isLoading,
-                  size: MediaQuery.sizeOf(context),
-                  child: const {{name.pascalCase()}}View(),
-                );
-              },
-            ),
+        child: BlocSelector<{{name.pascalCase()}}Bloc, {{name.pascalCase()}}State, bool>(
+          selector: (state) => state.isLoading,
+          builder: (context, isLoading) {
+            return LoadingScreen(
+              isLoading: isLoading,
+              size: MediaQuery.sizeOf(context),
+              child: const {{name.pascalCase()}}View(),
+            );
+          },
+        ),
       ),
     );
   }

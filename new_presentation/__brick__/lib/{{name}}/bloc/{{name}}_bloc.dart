@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../errors/errors.dart';
 
 part '{{name}}_bloc.freezed.dart';
 part '{{name}}_event.dart';
@@ -16,11 +17,12 @@ class {{name.pascalCase()}}Bloc extends Bloc<{{name.pascalCase()}}Event, {{name.
     ) async {
     emit(state.copyWith(isLoading: true));
     
-    switch (event) {
-      case {{name.pascalCase()}}Fetch():
-        break;
-    }
+    await event.map(
+      fetch: (e) async {
+        print('Fetching data...');
+      },
+    );
     
-    emit(state.copyWith(isLoading: false, errorMessage: null));
+    emit(state.copyWith(isLoading: false, failure: null));
   }
 }

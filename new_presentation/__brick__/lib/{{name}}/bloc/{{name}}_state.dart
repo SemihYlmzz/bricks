@@ -4,6 +4,6 @@ part of '{{name}}_bloc.dart';
 class {{name.pascalCase()}}State with _${{name.pascalCase()}}State {
    const factory {{name.pascalCase()}}State({
     @Default(false) bool isLoading,
-    @Default(null) String? errorMessage,
+    Failure? failure,
   }) = _{{name.pascalCase()}}State;
 }
