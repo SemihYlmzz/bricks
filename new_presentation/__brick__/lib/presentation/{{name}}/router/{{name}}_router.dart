@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:toy_switch/presentation/presentation.dart';
+import '../{{name}}.dart';
 
 class {{name.pascalCase()}}Router {
   factory {{name.pascalCase()}}Router() {

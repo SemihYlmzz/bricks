@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../presentation.dart';
+
+import '../{{name}}.dart';
 
 class {{name.pascalCase()}}View extends StatelessWidget {
   const {{name.pascalCase()}}View({super.key});

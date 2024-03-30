@@ -1,7 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:toy_switch/presentation/presentation.dart';
-
-import '../../../common/modals/modals.dart';
+import '../{{name}}.dart';
 
 extension {{name.pascalCase()}}ErrorDisplayer on {{name.pascalCase()}}BlocListeners {
   BlocListener<{{name.pascalCase()}}Bloc, {{name.pascalCase()}}State>
@@ -12,7 +11,14 @@ extension {{name.pascalCase()}}ErrorDisplayer on {{name.pascalCase()}}BlocListen
         if (errorMessage == null) {
           return;
         }
-        ErrorSnackbars.showSnackBar(context, errorMessage);
+        ScaffoldMessenger.of(context)
+          ..clearSnackBars()
+          ..showSnackBar(
+            SnackBar(
+              content: Text(errorMessage),
+              backgroundColor: Theme.of(context).colorScheme.error,
+            ),
+          );
       },
     );
   }
