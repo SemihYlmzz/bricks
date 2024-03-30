@@ -10,7 +10,7 @@ extension {{name.pascalCase()}}ErrorDisplayer on {{name.pascalCase()}}BlocListen
       listener: (context, state) {
         final failure = state.failure;
         
-        if (errorMessage == null || !context.mounted) {
+        if (failure == null || !context.mounted) {
           return;
         }
 
