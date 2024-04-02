@@ -15,7 +15,7 @@ class {{name.pascalCase()}}View extends StatelessWidget {
           Center(
             child: TextButton(
               onPressed: () {},
-              child: const Text(context.{{name.camelCase()}}Localization.buttonName),
+              child: Text(context.{{name.camelCase()}}Localization.buttonName),
             ),
           ),
         ],

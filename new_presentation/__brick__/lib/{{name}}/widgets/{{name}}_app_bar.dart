@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../sign_up.dart';
 
 class {{name.pascalCase()}}AppBar extends StatelessWidget implements PreferredSizeWidget {
   const {{name.pascalCase()}}AppBar({
@@ -8,7 +9,7 @@ class {{name.pascalCase()}}AppBar extends StatelessWidget implements PreferredSi
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text(context.{{name.camelCase()}}Localization.appBarTitle,
+      title: Text(context.{{name.camelCase()}}Localization.appBarTitle),
     );
   }
 
