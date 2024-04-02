@@ -8,7 +8,7 @@ class {{name.pascalCase()}}AppBar extends StatelessWidget implements PreferredSi
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text('{{name.titleCase()}} Screen'),
+      title: Text(context.{{name.camelCase()}}Localization.appBarTitle,
     );
   }
 
