@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../sign_up.dart';
+import '../{{name}}.dart';
 
 class {{name.pascalCase()}}AppBar extends StatelessWidget implements PreferredSizeWidget {
   const {{name.pascalCase()}}AppBar({
