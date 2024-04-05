@@ -1,4 +1,4 @@
-name: {{name.snakeCase()}}_api
+name: {{name.snakeCase()}}
 description: description
 version: 0.1.0+1
 publish_to: none
