@@ -9,9 +9,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   # Annotations
   json_annotation: ^4.8.1
   freezed_annotation: ^2.4.1
+  
+  # Dart
+  fpdart: ^1.1.0
 
 dev_dependencies:
   very_good_analysis: ^5.1.0
