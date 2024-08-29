@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../l10n/l10n.dart';
 
 extension {{name.pascalCase()}}LocalizationExtension on BuildContext {
   {{name.pascalCase()}}Localization get {{name.camelCase()}}Localization {
