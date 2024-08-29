@@ -11,22 +11,29 @@ class {{name.pascalCase()}}Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     final {{name.camelCase()}}BlocListeners = {{name.pascalCase()}}BlocListeners();
   
-    return BlocProvider(
-      create: (context) => {{name.pascalCase()}}Bloc(),
-      child: MultiBlocListener(
-        listeners: [
-          {{name.camelCase()}}BlocListeners.errorDisplayer(),
-        ],
-        child: BlocSelector<{{name.pascalCase()}}Bloc, {{name.pascalCase()}}State, bool>(
-          selector: (state) => state.isLoading,
-          builder: (context, isLoading) {
-            return LoadingScreen(
-              isLoading: isLoading,
-              size: MediaQuery.sizeOf(context),
-              child: const {{name.pascalCase()}}View(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => {{name.pascalCase()}}Bloc())
+        BlocProvider(create: (context) => {{name.pascalCase()}}Cubit())
+      ],
+      child: Builder(
+        builder: (context) {
+          return MultiBlocListener(
+              listeners: [
+                {{name.camelCase()}}BlocListeners.errorDisplayer(),
+              ],
+              child: BlocSelector<{{name.pascalCase()}}Bloc, {{name.pascalCase()}}State, bool>(
+                selector: (state) => state.isLoading,
+                builder: (context, isLoading) {
+                  return LoadingScreen(
+                    isLoading: isLoading,
+                    size: MediaQuery.sizeOf(context),
+                    child: const {{name.pascalCase()}}View(),
+                  );
+                },
+              ),
             );
-          },
-        ),
+        },
       ),
     );
   }

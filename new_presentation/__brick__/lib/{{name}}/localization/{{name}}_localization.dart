@@ -11,9 +11,9 @@ class {{name.pascalCase()}}Localization {
   const {{name.pascalCase()}}Localization(this.context);
   final BuildContext context;
 
-  // "buttonName": "{{name.titleCase()}} Button",
+  //  "buttonName": "{{name.titleCase()}} Button",
   String get buttonName => '{{name.titleCase()}} Button';
 
-  // "appBarTitle": "{{name.titleCase()}} Screen",
-  String get appBarTitle => '{{name.titleCase()}} Screen';
+  //  "appBarTitle": "{{name.titleCase()}}",
+  String get appBarTitle => '{{name.titleCase()}}';
 }
