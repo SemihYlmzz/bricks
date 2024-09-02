@@ -20,6 +20,7 @@ class {{name.pascalCase()}}Screen extends StatelessWidget {
           return MultiBlocListener(
               listeners: [
                 {{name.camelCase()}}BlocListeners.errorDisplayer(),
+                {{name.camelCase()}}BlocListeners.cubitErrorDisplayer(),
               ],
               child: BlocSelector<{{name.pascalCase()}}Bloc, {{name.pascalCase()}}State, bool>(
                 selector: (state) => state.isLoading,

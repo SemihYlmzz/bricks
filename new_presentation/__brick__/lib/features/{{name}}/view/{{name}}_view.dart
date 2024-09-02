@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../app/app.dart';
 import '../{{name}}.dart';
 
 class {{name.pascalCase()}}View extends StatelessWidget {
@@ -7,9 +8,9 @@ class {{name.pascalCase()}}View extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BaseScaffold(
       appBar: const {{name.pascalCase()}}AppBar(),
-      body: Column(
+      body: BaseColumn(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(

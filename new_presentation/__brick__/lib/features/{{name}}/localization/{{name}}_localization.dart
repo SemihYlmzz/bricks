@@ -13,6 +13,6 @@ class {{name.pascalCase()}}Localization {
   //  "buttonName": "{{name.titleCase()}} Button",
   String get buttonName => '{{name.titleCase()}} Button';
 
-  //  "appBarTitle": "{{name.titleCase()}}",
-  String get appBarTitle => '{{name.titleCase()}}';
+  //  "{{name.camelCase()}}": "{{name.titleCase()}}",
+  String get {{name.camelCase()}} => '{{name.titleCase()}}';
 }

@@ -9,10 +9,10 @@ class {{name.pascalCase()}}AppBar extends StatelessWidget implements PreferredSi
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text(context.{{name.camelCase()}}Localization.appBarTitle),
+      title: Text(context.{{name.camelCase()}}Localization.{{name.camelCase()}}),
       centerTitle: true,
       forceMaterialTransparency: true,
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
     );
   }
 

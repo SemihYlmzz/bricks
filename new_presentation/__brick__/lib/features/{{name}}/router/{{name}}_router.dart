@@ -19,7 +19,7 @@ class {{name.pascalCase()}}Router {
         path: _path,
         name: _name,
         // parentNavigatorKey: RouterMixin.parentNavigatorKey,
-        pageBuilder: (context, state) => const NoTransitionPage(
+        pageBuilder: (context, state) => const MaterialPage(
           child: {{name.pascalCase()}}Screen(),
         ),
       );
