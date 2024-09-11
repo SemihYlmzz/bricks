@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../{{name}}.dart';
 
-class {{name.pascalCase()}}Router extends GoRoute {
-  factory {{name.pascalCase()}}Router() {
+class {{name.pascalCase()}}GoRoute extends GoRoute {
+  factory {{name.pascalCase()}}GoRoute() {
     return instance;
   }
-  {{name.pascalCase()}}Router._()
+  {{name.pascalCase()}}GoRoute._()
       : super(path: _path, name: _name, pageBuilder: _pageBuilder);
 
-  static final {{name.pascalCase()}}Router instance = {{name.pascalCase()}}Router._();
+  static final {{name.pascalCase()}}GoRoute instance = {{name.pascalCase()}}GoRoute._();
 
   static const String _path = '/{{name}}';
   static const String _name = '{{name}}';
 
-  static GoRouterPageBuilder get _pageBuilder => pageBuilder: 
+  static GoRouterPageBuilder get _pageBuilder => 
       (context, state) => const MaterialPage(
           child: {{name.pascalCase()}}Screen(),
         );
