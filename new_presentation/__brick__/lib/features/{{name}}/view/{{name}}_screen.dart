@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:provider/provider.dart';
 
 import '../{{name}}.dart';
 
@@ -8,27 +8,15 @@ class {{name.pascalCase()}}Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final {{name.camelCase()}}BlocListeners = {{name.pascalCase()}}BlocListeners();
   
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (context) => {{name.pascalCase()}}Bloc()),
-        BlocProvider(create: (context) => {{name.pascalCase()}}Cubit()),
-      ],
+    return ChangeNotifierProvider(
+      create: (context) => {{name.pascalCase()}}ViewModel(),
       child: Builder(
         builder: (context) {
-          return MultiBlocListener(
-              listeners: [
-                {{name.camelCase()}}BlocListeners.errorDisplayer(),
-                {{name.camelCase()}}BlocListeners.cubitErrorDisplayer(),
-              ],
-              child: BlocSelector<{{name.pascalCase()}}Bloc, {{name.pascalCase()}}State, bool>(
-                selector: (state) => state.isLoading,
-                builder: (context, isLoading) {
-                  return const {{name.pascalCase()}}View();
-                },
-              ),
-            );
+          final viewModel = context.read<ToyDetailViewModel>();
+          viewModel.connectIsLoadingWithApp(context);
+          viewModel.connectAppFailureWithApp(context);
+          return {{name.pascalCase()}}View();
         },
       ),
     );
