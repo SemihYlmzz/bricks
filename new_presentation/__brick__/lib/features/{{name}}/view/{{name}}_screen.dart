@@ -8,15 +8,14 @@ class {{name.pascalCase()}}Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  
     return ChangeNotifierProvider(
       create: (context) => {{name.pascalCase()}}ViewModel(),
       child: Builder(
         builder: (context) {
-          final viewModel = context.read<ToyDetailViewModel>();
+          final viewModel = context.read<{{name.pascalCase()}}ViewModel>();
           viewModel.connectIsLoadingWithApp(context);
           viewModel.connectAppFailureWithApp(context);
-          return {{name.pascalCase()}}View();
+          return const {{name.pascalCase()}}View();
         },
       ),
     );
