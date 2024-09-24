@@ -1,1 +1,1 @@
-export '{{name}}_router.dart';
+export '{{name}}_go_route.dart';
